@@ -34,7 +34,11 @@ public class MainAbilitySlice extends AbilitySlice {
         button_log.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                ZLog.i("TAG","Harmony你好！");
+                ZLog.i("TAG","Harmony你好1");
+                ZLog.d("TAG","Harmony你好2");
+                ZLog.e("TAG","Harmony你好3");
+                ZLog.f("TAG","Harmony你好4");
+                ZLog.w("TAG","Harmony你好5");
             }
         });
 
