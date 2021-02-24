@@ -1,0 +1,61 @@
+{
+  "app": {
+    "bundleName": "com.zdtx.harmonyos.zdtxtodo",
+    "vendor": "zdtx",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.zdtx.harmonyos.zdtxtodo",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.main.info"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.zdtx.harmonyos.zdtxtodo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "zdtxTodo",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.ACCESS_BIOMETRIC",
+        "usedScene": {
+          "ability": [
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ]
+  }
+}
