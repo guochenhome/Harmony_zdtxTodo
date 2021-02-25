@@ -52,7 +52,7 @@
         "reason": "需要访问网络的权限",
         "usedScene": {
           "ability": [
-            "com.sun.os.MainAbility"
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
           ],
           "when": "always"
         }
@@ -62,7 +62,7 @@
         "reason": "需要访问相机的权限",
         "usedScene": {
           "ability": [
-            "com.sun.os.MainAbility"
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
           ],
           "when": "always"
         }
@@ -72,7 +72,7 @@
         "reason": "需要读写文件的权限",
         "usedScene": {
           "ability": [
-            "com.sun.os.MainAbility"
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
           ],
           "when": "always"
         }
@@ -82,7 +82,37 @@
         "reason": "需要读写文件的权限",
         "usedScene": {
           "ability": [
-            "com.sun.os.MainAbility"
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "允许程序打开网络套接字，进行网络连接",
+        "usedScene": {
+          "ability": [
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "获取网络连接信息",
+        "usedScene": {
+          "ability": [
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "hos.permission.SET_NETWORK_INFO",
+        "reason": "修改网络连接状态",
+        "usedScene": {
+          "ability": [
+            "com.zdtx.harmonyos.zdtxtodo.MainAbility"
           ],
           "when": "always"
         }

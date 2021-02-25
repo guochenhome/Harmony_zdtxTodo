@@ -17,7 +17,7 @@ public class MainAbility extends Ability {
     }
 
     private void checkSelfPermission() {
-        String[] permissions = new String[]{"ohos.permission.CAMERA", "ohos.permission.READ_USER_STORAGE", "ohos.permission.WRITE_USER_STORAGE"};
+        String[] permissions = new String[]{"ohos.permission.CAMERA", "ohos.permission.READ_USER_STORAGE", "ohos.permission.WRITE_USER_STORAGE","ohos.permission.INTERNET"};
         requestPermissionsFromUser(permissions, 1001);
     }
 }

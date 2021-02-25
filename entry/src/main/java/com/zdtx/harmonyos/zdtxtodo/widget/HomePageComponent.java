@@ -3,33 +3,40 @@ package com.zdtx.harmonyos.zdtxtodo.widget;
 import com.zdtx.harmonyos.zdtxtodo.ResourceTable;
 import com.zdtx.harmonyos.zdtxtodo.bean.NewsBean;
 import com.zdtx.harmonyos.zdtxtodo.kits.DisplayUtils;
+import com.zdtx.harmonyos.zdtxtodo.kits.HmOSImageLoader;
+import com.zdtx.harmonyos.zdtxtodo.kits.ImageReadUtil;
 import com.zdtx.harmonyos.zdtxtodo.kits.ZLog;
 import com.zdtx.harmonyos.zdtxtodo.tool.Constant;
-import com.zdtx.harmonyos.zdtxtodo.tool.HmOSImageLoader;
 import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
 import ohos.app.Context;
+import ohos.app.dispatcher.TaskDispatcher;
+import ohos.app.dispatcher.task.TaskPriority;
+import ohos.media.image.PixelMap;
 import ohos.multimodalinput.event.TouchEvent;
 
 import java.util.ArrayList;
 
 public class HomePageComponent extends ComponentContainer {
+    private Context context;
+
     public HomePageComponent(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public HomePageComponent(Context context, AttrSet attrSet) {
         super(context, attrSet);
-        init();
+        init(context);
     }
 
     public HomePageComponent(Context context, AttrSet attrSet, String styleName) {
         super(context, attrSet, styleName);
-        init();
+        init(context);
     }
 
-    private void init() {
+    private void init(Context context) {
+        this.context = context;
         Component contentLayout = LayoutScatter.getInstance(getContext()).parse(ResourceTable.Layout_layout_home_page, this, false);
         addComponent(contentLayout);
 
@@ -126,7 +133,7 @@ public class HomePageComponent extends ComponentContainer {
         int width = DisplayUtils.getDisplayWidthInPx(getContext()) - DisplayUtils.vp2px(getContext(), 15) * 2;
         Image ivPoster = (Image) contentLayout.findComponentById(ResourceTable.Id_ivPoster);
         ivPoster.setHeight((int) (width * 0.173333));
-        HmOSImageLoader.with(getContext()).load(Constant.posterPath).def(ResourceTable.Media_img_poster).into(ivPoster);
+        HmOSImageLoader.with(this.context).load(Constant.posterPath).erre(ResourceTable.Media_img_poster).into(ivPoster);
     }
 
     private void initPremiumLayout(Component contentLayout) {
@@ -136,7 +143,7 @@ public class HomePageComponent extends ComponentContainer {
 
     private void initSeriesLayout(Component contentLayout) {
         HomePageTitleComponent titleComponent = (HomePageTitleComponent) contentLayout.findComponentById(ResourceTable.Id_titleSeries);
-        titleComponent.setData("创造力培养体系", "", null);
+        titleComponent.setData("创造力培养体系", "查看全部>", null);
     }
 
     private void initPartLayout(Component contentLayout) {
@@ -146,7 +153,7 @@ public class HomePageComponent extends ComponentContainer {
 
     private void initEducLayout(Component contentLayout) {
         HomePageTitleComponent titleComponent = (HomePageTitleComponent) contentLayout.findComponentById(ResourceTable.Id_titleEduc);
-        titleComponent.setData("亲职教育", "", null);
+        titleComponent.setData("亲职教育", "查看全部>", null);
     }
 
     private void initContestLayout(Component contentLayout) {
@@ -159,9 +166,9 @@ public class HomePageComponent extends ComponentContainer {
         titleComponent.setData("学院资讯", "更多＞", null);
 
         ArrayList<NewsBean> newsList = new ArrayList<>();
-        newsList.add(new NewsBean("关于磁力片边缘飞起瑕疵的工艺说明,如果你看了就懂了", "2020-02-27", "10834", true));
-        newsList.add(new NewsBean("App 的使用方法", "2020-07-01", "499", false));
-        newsList.add(new NewsBean("磁力片的起源", "2019-12-11", "93", false));
+        newsList.add(new NewsBean("列表效果x0", "2020-02-27", "10834", true));
+        newsList.add(new NewsBean("列表效果x1", "2020-07-01", "499", false));
+        newsList.add(new NewsBean("列表效果x2", "2019-12-11", "93", false));
 
         DirectionalLayout newsContainer = (DirectionalLayout) contentLayout.findComponentById(ResourceTable.Id_newsContainer);
         for (NewsBean newsBean : newsList) {

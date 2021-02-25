@@ -125,7 +125,7 @@
                         ohos:id="$+id:tvNotice"
                         ohos:left_margin="6vp"
                         ohos:max_text_lines="1"
-                        ohos:text="公告：课程总数为2131119个，截止到2021年01月29日"
+                        ohos:text="公告：走马灯效果-走马灯效果-走马灯效果-走马灯效果-走马灯效果-"
                         ohos:text_color="$color:dark"
                         ohos:text_size="14fp"
                         ohos:truncation_mode="auto_scrolling"
@@ -306,7 +306,7 @@
                         ohos:height="match_content"
                         ohos:left_margin="5vp"
                         ohos:right_margin="5vp"
-                        ohos:text="您已经到了宇宙的边缘了哦!"
+                        ohos:text="您已经到了底部了!"
                         ohos:text_color="#d1d1d1"
                         ohos:text_size="12fp"
                         ohos:width="match_content"/>
