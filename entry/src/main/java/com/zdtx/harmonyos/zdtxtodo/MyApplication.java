@@ -7,6 +7,6 @@ public class MyApplication extends AbilityPackage {
     @Override
     public void onInitialize() {
         super.onInitialize();
-        ZLog.init(BuildConfig.DEBUG, "指动天下");
+        ZLog.init(BuildConfig.DEBUG, "指动天下App");
     }
 }

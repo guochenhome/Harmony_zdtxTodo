@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:padding="15vp"
+    ohos:top_margin="10vp"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:height="match_content"
+        ohos:id="$+id:tvTitle"
+        ohos:text="标题"
+        ohos:text_color="$color:dark"
+        ohos:text_size="18fp"
+        ohos:width="match_content"/>
+
+    <Text
+        ohos:align_parent_right="true"
+        ohos:height="match_content"
+        ohos:id="$+id:tvLabel"
+        ohos:text="查看全部＞"
+        ohos:text_color="#ffc613"
+        ohos:text_size="15fp"
+        ohos:vertical_center="true"
+        ohos:width="match_content"/>
+</DependentLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <Image
+        ohos:height="match_content"
+        ohos:image_src="$media:home_bg"
+        ohos:width="match_parent"/>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:orientation="vertical"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:alignment="vertical_center"
+            ohos:bottom_padding="6vp"
+            ohos:height="match_content"
+            ohos:left_padding="15vp"
+            ohos:orientation="horizontal"
+            ohos:right_padding="15vp"
+            ohos:top_padding="6vp"
+            ohos:width="match_parent">
+
+            <Image
+                ohos:height="21vp"
+                ohos:image_src="$media:icon_home_scan"
+                ohos:width="21vp"/>
+
+            <DirectionalLayout
+                ohos:background_element="$graphic:home_top_search_bg"
+                ohos:height="35vp"
+                ohos:left_margin="10vp"
+                ohos:left_padding="15vp"
+                ohos:orientation="horizontal"
+                ohos:right_margin="10vp"
+                ohos:right_padding="15vp"
+                ohos:weight="1"
+                ohos:width="0vp">
+
+                <Image
+                    ohos:height="14vp"
+                    ohos:image_src="$media:icon_search"
+                    ohos:layout_alignment="center"
+                    ohos:right_margin="6vp"
+                    ohos:width="14vp"/>
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:text="搜索课程、作品、学员"
+                    ohos:text_alignment="center"
+                    ohos:text_color="#A1A1A1"
+                    ohos:text_size="15fp"
+                    ohos:width="match_content"/>
+            </DirectionalLayout>
+
+            <Image
+                ohos:height="21vp"
+                ohos:image_src="$media:icon_home_message"
+                ohos:width="21vp"/>
+        </DirectionalLayout>
+
+        <ScrollView
+            ohos:height="match_parent"
+            ohos:width="match_parent">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:id="$+id:contentLayout"
+                ohos:orientation="vertical"
+                ohos:width="match_parent">
+
+                <DependentLayout
+                    ohos:height="match_content"
+                    ohos:top_margin="10vp"
+                    ohos:width="match_parent">
+
+                    <ScrollView
+                        ohos:height="match_content"
+                        ohos:id="$+id:bannerScroll"
+                        ohos:width="match_parent">
+
+                        <DirectionalLayout
+                            ohos:bottom_padding="10vp"
+                            ohos:height="match_content"
+                            ohos:id="$+id:bannerLayout"
+                            ohos:orientation="horizontal"
+                            ohos:top_padding="10vp"
+                            ohos:width="match_content"/>
+                    </ScrollView>
+
+                    <DirectionalLayout
+                        ohos:align_parent_bottom="true"
+                        ohos:align_parent_right="true"
+                        ohos:bottom_padding="20vp"
+                        ohos:height="match_content"
+                        ohos:id="$+id:pointLayout"
+                        ohos:left_padding="26vp"
+                        ohos:orientation="horizontal"
+                        ohos:right_padding="26vp"
+                        ohos:top_padding="20vp"
+                        ohos:width="match_content"/>
+                </DependentLayout>
+
+                <DirectionalLayout
+                    ohos:alignment="vertical_center"
+                    ohos:bottom_padding="6vp"
+                    ohos:height="match_content"
+                    ohos:id="$+id:noticeLayout"
+                    ohos:left_padding="15vp"
+                    ohos:orientation="horizontal"
+                    ohos:right_padding="15vp"
+                    ohos:top_padding="6vp"
+                    ohos:width="match_parent">
+
+                    <Image
+                        ohos:height="20vp"
+                        ohos:image_src="$media:icon_home_notice"
+                        ohos:width="20vp"/>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:id="$+id:tvNotice"
+                        ohos:left_margin="6vp"
+                        ohos:max_text_lines="1"
+                        ohos:text="公告：课程总数为2131119个，截止到2021年01月29日"
+                        ohos:text_color="$color:dark"
+                        ohos:text_size="14fp"
+                        ohos:truncation_mode="auto_scrolling"
+                        ohos:width="match_content"/>
+                </DirectionalLayout>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:id="$+id:courseLayout"
+                    ohos:orientation="horizontal"
+                    ohos:width="match_parent">
+
+                    <DirectionalLayout
+                        ohos:alignment="center"
+                        ohos:height="match_content"
+                        ohos:layout_alignment="center"
+                        ohos:orientation="vertical"
+                        ohos:weight="1"
+                        ohos:width="0vp">
+
+                        <Image
+                            ohos:height="55vp"
+                            ohos:image_src="$media:icon_course_1"
+                            ohos:scale_mode="clip_center"
+                            ohos:top_margin="15vp"
+                            ohos:width="55vp"/>
+
+                        <Text
+                            ohos:bottom_margin="10vp"
+                            ohos:height="match_content"
+                            ohos:text="磁力片"
+                            ohos:text_color="$color:gray"
+                            ohos:text_size="14fp"
+                            ohos:top_margin="5vp"
+                            ohos:width="match_content"/>
+                    </DirectionalLayout>
+
+                    <DirectionalLayout
+                        ohos:alignment="center"
+                        ohos:height="match_content"
+                        ohos:layout_alignment="center"
+                        ohos:orientation="vertical"
+                        ohos:weight="1"
+                        ohos:width="0vp">
+
+                        <Image
+                            ohos:height="55vp"
+                            ohos:image_src="$media:icon_course_2"
+                            ohos:scale_mode="clip_center"
+                            ohos:top_margin="15vp"
+                            ohos:width="55vp"/>
+
+                        <Text
+                            ohos:bottom_margin="10vp"
+                            ohos:height="match_content"
+                            ohos:text="大颗粒"
+                            ohos:text_color="$color:gray"
+                            ohos:text_size="14fp"
+                            ohos:top_margin="5vp"
+                            ohos:width="match_content"/>
+                    </DirectionalLayout>
+
+                    <DirectionalLayout
+                        ohos:alignment="center"
+                        ohos:height="match_content"
+                        ohos:layout_alignment="center"
+                        ohos:orientation="vertical"
+                        ohos:weight="1"
+                        ohos:width="0vp">
+
+                        <Image
+                            ohos:height="55vp"
+                            ohos:image_src="$media:icon_course_3"
+                            ohos:scale_mode="clip_center"
+                            ohos:top_margin="15vp"
+                            ohos:width="55vp"/>
+
+                        <Text
+                            ohos:bottom_margin="10vp"
+                            ohos:height="match_content"
+                            ohos:text="小颗粒"
+                            ohos:text_color="$color:gray"
+                            ohos:text_size="14fp"
+                            ohos:top_margin="5vp"
+                            ohos:width="match_content"/>
+                    </DirectionalLayout>
+
+                    <DirectionalLayout
+                        ohos:alignment="center"
+                        ohos:height="match_content"
+                        ohos:layout_alignment="center"
+                        ohos:orientation="vertical"
+                        ohos:weight="1"
+                        ohos:width="0vp">
+
+                        <Image
+                            ohos:height="55vp"
+                            ohos:image_src="$media:icon_course_4"
+                            ohos:scale_mode="clip_center"
+                            ohos:top_margin="15vp"
+                            ohos:width="55vp"/>
+
+                        <Text
+                            ohos:bottom_margin="10vp"
+                            ohos:height="match_content"
+                            ohos:text="编程"
+                            ohos:text_color="$color:gray"
+                            ohos:text_size="14fp"
+                            ohos:top_margin="5vp"
+                            ohos:width="match_content"/>
+                    </DirectionalLayout>
+                </DirectionalLayout>
+
+                <Image
+                    ohos:height="match_content"
+                    ohos:id="$+id:ivPoster"
+                    ohos:left_margin="15vp"
+                    ohos:right_margin="15vp"
+                    ohos:scale_mode="clip_center"
+                    ohos:top_margin="15vp"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titlePremium"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titleSeries"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titlePart"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titleEduc"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titleContest"
+                    ohos:width="match_parent"/>
+
+                <com.zdtx.harmonyos.zdtxtodo.widget.HomePageTitleComponent
+                    ohos:height="match_content"
+                    ohos:id="$+id:titleNews"
+                    ohos:width="match_parent"/>
+
+                <DirectionalLayout
+                    ohos:background_element="$graphic:home_news_bg"
+                    ohos:height="match_content"
+                    ohos:id="$+id:newsContainer"
+                    ohos:left_margin="15vp"
+                    ohos:orientation="vertical"
+                    ohos:right_margin="15vp"
+                    ohos:width="match_parent"/>
+
+                <DirectionalLayout
+                    ohos:alignment="center"
+                    ohos:bottom_margin="15vp"
+                    ohos:height="match_content"
+                    ohos:layout_alignment="center"
+                    ohos:orientation="horizontal"
+                    ohos:top_margin="15vp"
+                    ohos:width="match_parent">
+
+                    <Component
+                        ohos:background_element="#f1f1f1"
+                        ohos:height="1px"
+                        ohos:weight="1"
+                        ohos:width="0vp"/>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:left_margin="5vp"
+                        ohos:right_margin="5vp"
+                        ohos:text="您已经到了宇宙的边缘了哦!"
+                        ohos:text_color="#d1d1d1"
+                        ohos:text_size="12fp"
+                        ohos:width="match_content"/>
+
+                    <Component
+                        ohos:background_element="#f1f1f1"
+                        ohos:height="1px"
+                        ohos:weight="1"
+                        ohos:width="0vp"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </ScrollView>
+    </DirectionalLayout>
+</StackLayout>

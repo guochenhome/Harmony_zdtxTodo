@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:padding="15vp"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:height="match_content"
+        ohos:id="$+id:tvNewsTitle"
+        ohos:max_text_lines="3"
+        ohos:multiple_lines="true"
+        ohos:text="这是一个新闻资讯"
+        ohos:text_color="$color:dark"
+        ohos:text_size="15fp"
+        ohos:width="match_content"/>
+
+    <Text
+        ohos:align_parent_left="true"
+        ohos:below="$id:tvNewsTitle"
+        ohos:element_left="$media:icon_course_date"
+        ohos:element_padding="2vp"
+        ohos:height="match_content"
+        ohos:id="$+id:tvNewsDate"
+        ohos:text="2020-01-30"
+        ohos:text_color="$color:thinGray"
+        ohos:text_size="14fp"
+        ohos:top_margin="5vp"
+        ohos:width="match_content"/>
+
+    <Text
+        ohos:align_parent_right="true"
+        ohos:below="$id:tvNewsTitle"
+        ohos:element_left="$media:icon_read"
+        ohos:element_padding="2vp"
+        ohos:height="match_content"
+        ohos:id="$+id:tvNewsCount"
+        ohos:text="100"
+        ohos:text_color="$color:thinGray"
+        ohos:text_size="14fp"
+        ohos:top_margin="5vp"
+        ohos:width="match_content"/>
+</DependentLayout>
