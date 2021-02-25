@@ -12,5 +12,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     implementation 'org.jetbrains:annotations:15.0'
 
-    implementation project(path: ':httplib')
+//    implementation project(path: ':httplib')
 }

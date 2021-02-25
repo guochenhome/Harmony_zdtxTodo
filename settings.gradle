@@ -1,1 +1,1 @@
-include ':entry', ':httplib'
+include ':entry'
